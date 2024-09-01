@@ -1,29 +1,28 @@
 {
-    "KPackageStructure": "Plasma/Applet",
-    "KPlugin": {
-        "Authors": [
-            {
-                "Name": "Brilliant Nurzaman",
-                "Email": ""
-            }
-        ],
-        "BugReportUrl": "https://github.com/imoize/plasmoid-dockio/issues",
-        "Category": "System Information",
-        "Description": "Plasma widget to control docker containers",
-        "EnabledByDefault": true,
-        "FormFactors": [
-            "desktop"
-        ],
-        "Icon": "dockio-icon",
-        "Id": "org.kde.plasma.dockio",
-        "License": "GPL-3.0",
-        "Name": "Dockio",
-        "Version": "0.1.1",
-        "Website": "https://github.com/imoize/plasmoid-dockio"
-    },
-    "X-KDE-Keywords": "docker,container",
-    "X-Plasma-API-Minimum-Version": "6.0",
-    "X-Plasma-NotificationArea": "true",
-    "X-Plasma-NotificationAreaCategory": "SystemServices"
+  "KPackageStructure": "Plasma/Applet",
+  "KPlugin": {
+    "Authors": [
+      {
+        "Name": "Lorenzo Guideri",
+        "Email": ""
+      }
+    ],
+    "BugReportUrl": "https://github.com/LorenzoGuideri/rdockr/issues",
+    "Category": "System Information",
+    "Description": "Plasma widget to control docker containers in a remote server",
+    "EnabledByDefault": true,
+    "FormFactors": [
+      "desktop"
+    ],
+    "Icon": "rdockr-icon",
+    "Id": "org.kde.plasma.rdockr",
+    "License": "GPL-3.0",
+    "Name": "Rdockr",
+    "Version": "0.1.1",
+    "Website": "https://github.com/LorenzoGuideri/rdockr"
+  },
+  "X-KDE-Keywords": "docker,container",
+  "X-Plasma-API-Minimum-Version": "6.0",
+  "X-Plasma-NotificationArea": "true",
+  "X-Plasma-NotificationAreaCategory": "SystemServices"
 }
-

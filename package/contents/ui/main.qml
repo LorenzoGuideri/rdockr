@@ -29,7 +29,7 @@ PlasmoidItem {
     switchWidth: Kirigami.Units.gridUnit * 5
     switchHeight: Kirigami.Units.gridUnit * 5
     Plasmoid.status: (containerModel.count || error !== "") ? PlasmaCore.Types.ActiveStatus : PlasmaCore.Types.PassiveStatus
-    toolTipMainText: i18n("Dockio")
+    toolTipMainText: i18n("Rdockr")
     toolTipSubText: statusMessage
     Component.onCompleted: () => {
         Utils.notificationInstall();
@@ -48,9 +48,9 @@ PlasmoidItem {
 
     Notification {
         id: notif
-        componentName: "dockio"
+        componentName: "rdockr"
         eventId: "sound"
-        iconName: "dockio-icon"
+        iconName: "rdockr-icon"
         title: notifTitle
         text: notifText
     }
@@ -117,7 +117,7 @@ PlasmoidItem {
         PlasmaCore.Action {
             id: dockerAction
             text: i18n("Start Docker Engine")
-            icon.name: "dockio-start"
+            icon.name: "rdockr-start"
             property string command: "startDocker"
             onTriggered: {
                 if (command === "startDocker") {

@@ -50,7 +50,7 @@ ContainerListPage {
             
             QQC2.ToolButton {
                 text: i18n("Fetch Container")
-                icon.name: "dockio-refresh"
+                icon.name: "rdockr-refresh"
                 onClicked: {
                     dockerCommand.fetchContainers.get();
                 }

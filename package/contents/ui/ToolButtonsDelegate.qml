@@ -14,7 +14,7 @@ RowLayout {
         id: debugStartToolButton
         visible: cfg.debug
         text: i18n("Start")
-        icon.name: "dockio-start"
+        icon.name: "rdockr-start"
         onClicked: Utils.commands["startContainer"].run(containerId, containerName);
 
         PlasmaComponents.ToolTip{ text: parent.text }
@@ -24,7 +24,7 @@ RowLayout {
         id: debugStopToolButton
         visible: cfg.debug
         text: i18n("Stop")
-        icon.name: "dockio-stop"
+        icon.name: "rdockr-stop"
         onClicked: Utils.commands["stopContainer"].run(containerId, containerName);
 
         PlasmaComponents.ToolTip{ text: parent.text }
@@ -34,7 +34,7 @@ RowLayout {
         id: actionToolButton
         visible: !cfg.debug
         text: ["running", "removing", "restarting", "created"].includes(containerState) ? i18n("Stop") : i18n("Start")
-        icon.name: ["running", "removing", "restarting", "created"].includes(containerState) ? "dockio-stop" : "dockio-start"
+        icon.name: ["running", "removing", "restarting", "created"].includes(containerState) ? "rdockr-stop" : "rdockr-start"
         onClicked: {
             if (["running", "removing", "restarting", "created"].includes(containerState)) {
                 Utils.commands["stopContainer"].run(containerId, containerName);
@@ -49,7 +49,7 @@ RowLayout {
     QQC2.ToolButton  {
         id: restartToolButton
         text: i18n("Restart")
-        icon.name: "dockio-refresh"
+        icon.name: "rdockr-refresh"
         onClicked: Utils.commands["restartContainer"].run(containerId, containerName);
 
         PlasmaComponents.ToolTip{ text: parent.text }
@@ -58,7 +58,7 @@ RowLayout {
     QQC2.ToolButton {
         id: deleteToolButton
         text: i18n("Delete")
-        icon.name: "dockio-trash"
+        icon.name: "rdockr-trash"
         onClicked: Utils.commands["deleteContainer"].run(containerId, containerName);
 
         PlasmaComponents.ToolTip{ text: parent.text }

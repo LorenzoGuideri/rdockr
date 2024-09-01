@@ -17,7 +17,7 @@ ColumnLayout{
         id: errorMessage
         width: parent.width
         type: Kirigami.MessageType.Error
-        icon.name: "dockio-error"
+        icon.name: "rdockr-error"
         text: main.error
         visible: main.error != ""
         actions: Kirigami.Action {
@@ -107,9 +107,9 @@ ColumnLayout{
                         else return "Start your docker!";
                         }
                     icon.name: {
-                        if (filter.text !== "") return "dockio-cube";
-                        else if (error !== "") return "dockio-error";
-                        else return "dockio-icon";
+                        if (filter.text !== "") return "rdockr-cube";
+                        else if (error !== "") return "rdockr-error";
+                        else return "rdockr-icon";
                     }
                 }
             }

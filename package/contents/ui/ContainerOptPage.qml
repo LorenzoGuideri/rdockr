@@ -36,7 +36,7 @@ ColumnLayout {
             QQC2.ToolButton {
                 id: inspectToolButton
                 text: i18n("Inspect")
-                icon.name: "dockio-inspect"
+                icon.name: "rdockr-inspect"
                 onClicked: {
                     Utils.commands["inspectContainer"].run(containerId, containerName);
                     containerInfoText.text = "";

@@ -32,7 +32,7 @@ MouseArea {
         anchors.fill: parent
         active: compact.containsMouse
         activeFocusOnTab: true
-        source: "dockio-icon"
+        source: "rdockr-icon"
         color: {
             if ( error === "" && dockerEnable === true ) {
                 Kirigami.Theme.textColor
