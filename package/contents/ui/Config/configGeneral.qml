@@ -13,6 +13,8 @@ KCM.SimpleKCM {
     property alias cfg_fetchOnExpand: fetchOnExpand.checked
     property alias cfg_fetchOnStart: fetchOnStartup.checked
     property alias cfg_debug: debug.checked
+    property alias cfg_host: host.text
+    property alias cfg_user: user.text
 
     ColumnLayout {
         id: infoGeneralMessage

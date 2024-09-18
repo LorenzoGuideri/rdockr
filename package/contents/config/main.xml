@@ -8,6 +8,8 @@
 	<group name="General">
 		<entry name="pollApiInterval"   			 type="Int"><default>30</default></entry>
 		<entry name="fetchContainerInterval"   type="Int"><default>30</default></entry>
+		<entry name="host"                     type="String"><default>localhost</default></entry>
+		<entry name="user"                     type="String"><default>app</default></entry>
 		<entry name="useNotif" 								 type="Bool"><default>false</default></entry>
 		<entry name="fetchOnExpand"   				 type="Bool"><default>false</default></entry>
 		<entry name="fetchOnStart"    				 type="Bool"><default>true</default></entry>
