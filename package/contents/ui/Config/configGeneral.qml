@@ -57,7 +57,26 @@ KCM.SimpleKCM {
                 infoFetchContainer.text = "Fetch containers interval will run every " + fetchContainerInterval.value + " seconds, which may consume excessive resources and impact battery life. Consider increasing the value."
             }
             Kirigami.FormData.label: i18n("Fetch Containers Interval (s):")
-        }
+          }
+
+        Item {
+            Kirigami.FormData.isSection: true
+          }
+
+        QQC2.TextField {
+            id: host
+
+            Kirigami.FormData.label: i18n("Host:")
+            placeholderText: i18n("Enter host address")
+          }
+
+
+        QQC2.TextField {
+            id: user 
+
+            Kirigami.FormData.label: i18n("User:")
+            placeholderText: i18n("Enter user name")
+          }
 
         Item {
             Kirigami.FormData.isSection: true
